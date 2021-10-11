@@ -11,7 +11,7 @@ fortune_model = pickle.load(open('finalized_model.pkl','rb'))
 #sidebar
 sidebar_description = st.sidebar.title("Fill your Information")
 sidebar_age = st.sidebar.slider("Age", 17, 60)
-sidebar_income = st.sidebar.number_input("Income")
+sidebar_income = st.sidebar.number_input(label="Income", min_value=0, max_value=12000000, value=1000000, step=10000)
 sidebar_job = st.sidebar.selectbox("Job", ("College Student","Employee","Businessman"))
 sidebar_marital = st.sidebar.selectbox("Marital Status", ("Not Married","Married"))
 sidebar_residence = st.sidebar.selectbox("Residence", ("House","Boarding House"))
