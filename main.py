@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import sklearn
 
 #title & layout
 st.set_page_config(page_title = "Fortune", layout = "wide")
@@ -23,7 +24,6 @@ st.markdown("""
 """)
 st.header("Prediction Calculation")
 
-# model predict (age, income, marital_number, job_number, residence_number) 
 # marital status = notmarried(0),married(1) ; job = businessman(0),college(1),employee(2) ; residence = boarding(0), house(1)
 
 #parameter marital
