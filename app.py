@@ -47,7 +47,7 @@ st.markdown("""
         <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Budget Calculator</a>
+        <a class="nav-link" href="#">Expense Calculator</a>
       </li>
     </ul>
   </div>
