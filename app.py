@@ -1,6 +1,4 @@
 import streamlit as st
-import pickle
-import sklearn
 from multiapp import MultiApp
 from apps import home, expense #import your new app page here
 

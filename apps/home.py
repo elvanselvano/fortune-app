@@ -9,7 +9,7 @@ def app():
     #sidebar
     sidebar_description = st.sidebar.title("Fill your Information")
     sidebar_age = st.sidebar.slider("Age", 17, 60)
-    sidebar_income = st.sidebar.number_input(label="Income", min_value=0, max_value=12000000, value=1000000, step=10000)
+    sidebar_income = st.sidebar.number_input(label="Income", min_value=0, value=1000000, step=500000)
     sidebar_job = st.sidebar.selectbox("Job", ("College Student","Employee","Businessman"))
     sidebar_marital = st.sidebar.selectbox("Marital Status", ("Not Married","Married"))
     sidebar_residence = st.sidebar.selectbox("Residence", ("House","Boarding House"))
@@ -17,8 +17,7 @@ def app():
     #content
     st.header("Prediction Calculation")
     st.markdown("""
-        Fill your information on the left bar to see what you must do.
-        Press the predict button below to know your result!
+        Fill your information on the left bar to see what you must do and press the predict button below to know your result!
     """)
 
     # marital status = notmarried(0),married(1) ; job = businessman(0),college(1),employee(2) ; residence = boarding(0), house(1)
